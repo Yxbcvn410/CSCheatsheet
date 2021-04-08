@@ -1,7 +1,10 @@
 # Шпаргалки по проге
 
 Конспекты по теории:
-- [Распараллеливание циклов](Theory/loops.md)
+- Циклы
+	- [Распараллеливание циклов](Theory/loops.md)
+	- [Распараллеливание вложенных циклов](Theory/i_loops.md)
+	- [Эквивалентные преобразования циклов](Theory/transformations.md)
 
 
 Для практики:
@@ -13,6 +16,8 @@
 
 Другие полезные ссылки:
 
-- [Конспекты от Жени](ConspectsByEugene)
+- Информация от Карпова
+	- [Доска объявлений](https://docs.google.com/document/d/1JR7anolLeG0t-okacf0eqbd7Hr-6YVt6qKIhKLAxTAk)
+	- [Google Drive с презентациями](https://drive.google.com/drive/folders/1T4lBKMwdal8VcDRM557EDM5PY9EfzCNT?usp=sharing)
 
-- [Google Drive с презентациями](https://docs.google.com/document/d/1JR7anolLeG0t-okacf0eqbd7Hr-6YVt6qKIhKLAxTAk/edit)
+- [Конспекты от Жени](ConspectsByEugene)

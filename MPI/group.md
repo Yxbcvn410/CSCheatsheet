@@ -17,6 +17,22 @@ int MPI_Bcast(void *buffer, int count, MPI_Datatype datatype, int root, MPI_Comm
 
 **Важно**. Такого рода сообщения не имеют тега. Также в этой функции необходимо задать номер потока-отправителя.
 
+Если нужно собрать воедино данные из кучи разных массивов, есть функция [MPI_Gather](https://www.mpich.org/static/docs/latest/www3/MPI_Gather.html).
+
+```c++
+int MPI_Gather(const void *sendbuf, int sendcount, MPI_Datatype sendtype,
+               void *recvbuf, int recvcount, MPI_Datatype recvtype, int root, MPI_Comm comm)
+```
+
+**Важно**. `sendcount` и `recvcount` должны быть одинаковыми и равны друг другу для всех потоков. Если у каждого потока свой размер данных, необходимо использовать функцию [MPI_Gatherv](https://www.mpich.org/static/docs/latest/www3/MPI_Gatherv.html).
+
+
+```c++
+int MPI_Gatherv(const void *sendbuf, int sendcount, MPI_Datatype sendtype,
+                void *recvbuf, const int *recvcounts, const int *displs,
+                MPI_Datatype recvtype, int root, MPI_Comm comm)
+```
+
 Если у нас много потоков и мы хотим быстро, скажем, просуммировать числа, есть функция [MPI_Reduce](https://www.mpich.org/static/docs/latest/www3/MPI_Reduce.html).
 
 ```c++
