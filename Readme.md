@@ -11,6 +11,8 @@
 - MPI
 	- [Базовые функции](MPI/base.md)
 	- [Групповые операции](MPI/group.md)
+- OpenMP
+	- [Базовые функции](OpenMP/base.md)
 - Настройка системы
 	- [Настройка SSH](SystemCfg/ssh.md)
 
